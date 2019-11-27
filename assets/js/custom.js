@@ -32,7 +32,7 @@ jQuery(function($) {
     infinite: true,
     arrows: false,
     speed: 200,
-    autoplay: true,
+    // autoplay: true,
     fade: true,
     cssEase: "linear"
   });
