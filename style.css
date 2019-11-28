@@ -588,6 +588,13 @@ img {
   margin-bottom: 5px;
 }
 
+.mu-about-us-detail {
+  margin: 50px;
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
 .mu-about-us-right {
   display: block;
   float: left;
@@ -604,10 +611,12 @@ img {
 .panel {
   background-color: #fff;
   border: solid 2px #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
   box-shadow: 0 6px 6px -6px #000;
   display: block;
   flex: 1 1;
-  height: 200px;
+  height: auto;
   margin: 1vmin;
   overflow: hidden;
   position: relative;
@@ -648,6 +657,10 @@ img {
 
 .bottom-right img:not(:last-child) {
   margin-right: 10px;
+}
+
+.panel:nth-child(4n + 1) {
+  background-image: radial-gradient(circle, yellow, orange);
 }
 
 /*==================
