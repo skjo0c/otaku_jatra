@@ -874,6 +874,56 @@ img {
 }
 
 /*==================
+Dropdown CSS
+====================*/
+
+path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+path.three {
+  fill: rgb(0, 0, 0);
+}
+
+.dropdown-menu > li > a:focus path.three {
+  fill: red;
+}
+
+.dropdown:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.dropdown:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.dropdown:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+  0% {
+    fill: red;
+  }
+  50% {
+    fill: #fbc638;
+  }
+  100% {
+    fill: red;
+  }
+}
+
+/*==================
 RESERVATION SECTION
 ====================*/
 
@@ -1291,141 +1341,101 @@ RESERVATION SECTION
   CHEF SECTION
 ====================*/
 
-#mu-chef {
+/* Artists */
+
+#mu-artists {
   display: inline;
   float: left;
+  width: 100%;
   padding: 100px 0;
-  width: 100%;
 }
 
-.mu-chef-area {
-  display: inline;
-  float: left;
-  width: 100%;
+#mu-artists .posts > li {
+  margin-right: 15px;
 }
 
-.mu-chef-content {
-  display: inline;
-  float: left;
-  margin-top: 30px;
-  padding-bottom: 60px;
-  width: 100%;
-}
-
-.mu-chef-nav {
-  display: inline;
-  float: left;
-  text-align: center;
-  width: 100%;
-}
-
-.mu-chef-nav .slick-list li {
-  background-color: #f8f8f8;
-  display: inline-block;
-  margin: 0 5px;
-  width: 22%;
-  overflow: hidden;
-}
-
-.mu-chef-nav .slick-list li:first-child {
-  margin-left: 0;
-}
-
-.mu-chef-nav .slick-list li:last-child {
+#mu-artists .posts > li:last-child {
   margin-right: 0;
 }
 
-.mu-chef-nav .slick-list li .mu-single-chef {
-  display: inline;
+.posts {
+  margin: 0 auto;
+}
+
+.posts > li {
   float: left;
   width: 100%;
+  background-color: #fff;
+}
+
+.posts figure {
   position: relative;
+  height: 340px;
 }
 
-.mu-chef-nav .slick-list li .mu-single-chef:hover .mu-single-chef-social {
-  bottom: 0;
-  opacity: 1;
-}
-
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-img {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-img img {
-  width: 100%;
-}
-
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-info {
-  display: inline;
-  float: left;
-  padding: 10px 10px 20px;
-  width: 100%;
-}
-
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-info h4 {
-  margin-bottom: 5px;
-}
-
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-info span {
-  font-size: 14px;
-  letter-spacing: 0.5px;
-}
-
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social {
-  background-color: #000;
+.posts figure > div {
   position: absolute;
-  bottom: -100%;
+  bottom: 0;
   left: 0;
-  right: 0;
-  padding: 23px 20px;
+  width: 70px;
+  height: 80px;
+  padding-top: 7px;
+  background-color: #ec1a55;
   text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a {
-  display: inline-block;
-  margin: 0 5px;
-  padding: 5px;
-  text-align: center;
-  width: 35px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+.posts figure > div > h3:last-child {
+  font-size: 0.625em; /* 10px / 16px */
+  line-height: 1.2em;
 }
 
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:hover,
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:focus {
-  color: #fff;
+.posts h5 {
+  font-size: 1.875em; /* 30px / 16px */
 }
 
-.mu-chef-nav .slick-dots {
-  text-align: center;
-  margin-bottom: -30px;
+.posts > li > article {
+  padding-top: 30px;
 }
 
-.mu-chef-nav .slick-dots li {
-  border-radius: 50%;
-  width: 20px;
-  display: inline-block;
-  float: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+.posts > li p {
+  clear: left;
+  margin-bottom: 30px;
+  font-size: 0.875em; /* 14px / 16px */
+  line-height: 24px;
 }
 
-.mu-chef-nav .slick-dots li button {
-  display: none;
+.posts .button {
+  width: 165px;
+  font-size: 0.6875em; /* 11px / 16px */
+  line-height: 40px;
+}
+
+/*--------------------
+  12.1.1 SMALL POSTS
+--------------------*/
+.posts.small > li {
+  width: 370px;
+  border: 5px solid black;
+}
+
+.posts.small figure {
+  height: 245px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.posts.small > li > article {
+  padding: 30px 15px;
+}
+
+.posts.small h5 {
+  font-size: 1.125em; /* 18px / 16px */
+}
+
+.posts.small > li p {
+  margin-bottom: 35px;
+  font-size: 0.8125em; /* 13px / 16px */
+  line-height: 22px;
 }
 
 /*==================
