@@ -1430,7 +1430,7 @@ RESERVATION SECTION
 }
 
 .posts.small h5 {
-  font-size: 1.125em; /* 18px / 16px */
+  font-size: 2.125em; /* 26px */
 }
 
 .posts.small > li p {
