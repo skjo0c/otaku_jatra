@@ -1,27 +1,26 @@
-'use strict';
+"use strict";
 
 /**
  * Demo.
  */
 var demo = (function(window, undefined) {
-
   /**
    * Enum of CSS selectors.
    */
   var SELECTORS = {
-    pattern: '.pattern',
-    card: '.card',
-    cardImage: '.card__image',
-    cardClose: '.card__btn-close',
+    pattern: ".pattern",
+    card: ".card",
+    cardImage: ".card__image",
+    cardClose: ".card__btn-close"
   };
 
   /**
    * Enum of CSS classes.
    */
   var CLASSES = {
-    patternHidden: 'pattern--hidden',
-    polygon: 'polygon',
-    polygonHidden: 'polygon--hidden'
+    patternHidden: "pattern--hidden",
+    polygon: "polygon",
+    polygonHidden: "polygon--hidden"
   };
 
   /**
@@ -40,8 +39,8 @@ var demo = (function(window, undefined) {
   /**
    * Initialise demo.
    */
-  function init() {
 
+  function init() {
     // For options see: https://github.com/qrohlf/Trianglify
     var pattern = Trianglify({
       width: window.innerWidth,
@@ -49,15 +48,15 @@ var demo = (function(window, undefined) {
       cell_size: 90,
       variance: 1,
       stroke_width: 0.6,
-      color_function : function(x, y) {
-        return '#de6551';
+      color_function: function(x, y) {
+        return "#de6551";
       }
     }).svg(); // Render as SVG.
 
     _mapPolygons(pattern);
 
     _bindCards();
-  };
+  }
 
   /**
    * Store path elements, map coordinates and sizes.
@@ -65,7 +64,6 @@ var demo = (function(window, undefined) {
    * @private
    */
   function _mapPolygons(pattern) {
-
     // Append SVG to pattern container.
     $(SELECTORS.pattern).append(pattern);
 
@@ -76,9 +74,8 @@ var demo = (function(window, undefined) {
     polygonMap.points = [];
 
     polygonMap.paths.forEach(function(polygon) {
-
       // Hide polygons by adding CSS classes to each svg path (used attrs because of IE).
-      $(polygon).attr('class', CLASSES.polygon + ' ' + CLASSES.polygonHidden);
+      $(polygon).attr("class", CLASSES.polygon + " " + CLASSES.polygonHidden);
 
       var rect = polygon.getBoundingClientRect();
 
@@ -92,18 +89,16 @@ var demo = (function(window, undefined) {
 
     // All polygons are hidden now, display the pattern container.
     $(SELECTORS.pattern).removeClass(CLASSES.patternHidden);
-  };
+  }
 
   /**
    * Bind Card elements.
    * @private
    */
   function _bindCards() {
-
     var elements = $(SELECTORS.card);
 
     $.each(elements, function(card, i) {
-
       var instance = new Card(i, card);
 
       layout[i] = {
@@ -113,10 +108,10 @@ var demo = (function(window, undefined) {
       var cardImage = $(card).find(SELECTORS.cardImage);
       var cardClose = $(card).find(SELECTORS.cardClose);
 
-      $(cardImage).on('click', _playSequence.bind(this, true, i));
-      $(cardClose).on('click', _playSequence.bind(this, false, i));
+      $(cardImage).on("click", _playSequence.bind(this, true, i));
+      $(cardClose).on("click", _playSequence.bind(this, false, i));
     });
-  };
+  }
 
   /**
    * Create a sequence for the open or close animation and play.
@@ -127,14 +122,13 @@ var demo = (function(window, undefined) {
    *
    */
   function _playSequence(isOpenClick, id, e) {
-
     var card = layout[id].card;
 
     // Prevent when card already open and user click on image.
     if (card.isOpen && isOpenClick) return;
 
     // Create timeline for the whole sequence.
-    var sequence = new TimelineLite({paused: true});
+    var sequence = new TimelineLite({ paused: true });
 
     var tweenOtherCards = _showHideOtherCards(id);
 
@@ -143,7 +137,6 @@ var demo = (function(window, undefined) {
 
       sequence.add(tweenOtherCards);
       sequence.add(card.openCard(_onCardMove), 0);
-
     } else {
       // Close sequence.
 
@@ -155,7 +148,7 @@ var demo = (function(window, undefined) {
     }
 
     sequence.play();
-  };
+  }
 
   /**
    * Show/Hide all other cards.
@@ -163,13 +156,11 @@ var demo = (function(window, undefined) {
    * @private
    */
   function _showHideOtherCards(id) {
-
-    var TL = new TimelineLite;
+    var TL = new TimelineLite();
 
     var selectedCard = layout[id].card;
 
     for (var i in layout) {
-
       var card = layout[i].card;
 
       // When called with `openCard`.
@@ -184,7 +175,7 @@ var demo = (function(window, undefined) {
     }
 
     return TL;
-  };
+  }
 
   /**
    * Callback to be executed on Tween update, whatever a polygon
@@ -194,7 +185,6 @@ var demo = (function(window, undefined) {
    * @private
    */
   function _onCardMove(track) {
-
     var radius = track.width / 2;
 
     var center = {
@@ -203,11 +193,13 @@ var demo = (function(window, undefined) {
     };
 
     polygonMap.points.forEach(function(point, i) {
-
       if (_detectPointInCircle(point, radius, center)) {
-        $(polygonMap.paths[i]).attr('class', CLASSES.polygon);
+        $(polygonMap.paths[i]).attr("class", CLASSES.polygon);
       } else {
-        $(polygonMap.paths[i]).attr('class', CLASSES.polygon + ' ' + CLASSES.polygonHidden);
+        $(polygonMap.paths[i]).attr(
+          "class",
+          CLASSES.polygon + " " + CLASSES.polygonHidden
+        );
       }
     });
   }
@@ -217,7 +209,6 @@ var demo = (function(window, undefined) {
    * @private
    */
   function _detectPointInCircle(point, radius, center) {
-
     var xp = point.x;
     var yp = point.y;
 
@@ -229,13 +220,12 @@ var demo = (function(window, undefined) {
     var isInside = Math.pow(xp - xc, 2) + Math.pow(yp - yc, 2) <= d;
 
     return isInside;
-  };
+  }
 
   // Expose methods.
   return {
     init: init
   };
-
 })(window);
 
 // Kickstart Demo.

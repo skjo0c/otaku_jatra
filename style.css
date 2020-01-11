@@ -28,7 +28,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: 'Prata', serif;
   color: #333333;
   font-size: 15px;
   overflow-x: hidden;
@@ -96,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
@@ -113,7 +113,7 @@ img {
 
 .mu-readmore-btn {
   background-color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   font-size: 16px;
   padding: 15px 35px;
@@ -127,7 +127,7 @@ img {
 
 .mu-readmore-btn::after {
   bottom: 5px;
-  content: "";
+  content: '';
   left: 5px;
   position: absolute;
   right: 5px;
@@ -147,7 +147,7 @@ img {
 .mu-readmore-btn:hover::after,
 .mu-readmore-btn:focus::after {
   bottom: 0px;
-  content: "";
+  content: '';
   left: 0px;
   right: 0px;
   top: 0px;
@@ -226,7 +226,7 @@ img {
 }
 
 .mu-main-navbar .mu-main-nav {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .mu-main-navbar .mu-main-nav li a {
@@ -293,7 +293,7 @@ img {
 .bubble {
   padding: 0.2rem 1.25rem;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
   background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
@@ -314,7 +314,7 @@ img {
 
 /* for every .bubble container add a solid background behind the container itself, slightly offset */
 .bubble:before {
-  content: "";
+  content: '';
   position: absolute;
   left: -1rem;
   top: 0.15rem;
@@ -390,7 +390,7 @@ img {
 .mu-top-slider .mu-top-slider-single:after {
   background-color: rgba(0, 0, 0, 0.6);
   bottom: 0;
-  content: "";
+  content: '';
   left: 0;
   position: absolute;
   right: 0;
@@ -423,7 +423,7 @@ img {
   .mu-top-slider-single
   .mu-top-slider-content
   .mu-slider-small-title {
-  font-family: "Tangerine", cursive;
+  font-family: 'Tangerine', cursive;
   font-size: 100px;
   font-weight: 400;
   line-height: 40px;
@@ -444,12 +444,12 @@ img {
 }
 
 .mu-top-slider .slick-prev::before {
-  content: "\f177";
+  content: '\f177';
   font-family: fontAwesome;
 }
 
 .mu-top-slider .slick-next::before {
-  content: "\f178";
+  content: '\f178';
   font-family: fontAwesome;
 }
 
@@ -578,7 +578,7 @@ img {
 
 .mu-title .mu-subtitle {
   font-size: 50px;
-  font-family: "Tangerine", cursive;
+  font-family: 'Tangerine', cursive;
   line-height: 30px;
 }
 
@@ -604,14 +604,14 @@ img {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 1vmin;
 }
 
 .panel {
   background-color: #fff;
   border: solid 2px #000;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   box-shadow: 0 6px 6px -6px #000;
   display: block;
@@ -630,7 +630,7 @@ img {
 }
 
 .top-left {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   font-weight: bold;
   left: -6px;
@@ -669,7 +669,7 @@ img {
 
 #mu-counter {
   background-attachment: fixed;
-  background-image: url("assets/img/otakujatra.jpg");
+  background-image: url('assets/img/otakujatra.jpg');
   background-size: cover;
   display: inline;
   float: left;
@@ -713,7 +713,7 @@ img {
 }
 
 .mu-counter-nav li .mu-single-counter span {
-  font-family: "Tangerine", cursive;
+  font-family: 'Tangerine', cursive;
   font-size: 40px;
 }
 
@@ -726,7 +726,7 @@ img {
 }
 
 .mu-counter-nav li .mu-single-counter h3 span {
-  font-family: "Tangerine", cursive;
+  font-family: 'Tangerine', cursive;
   font-size: 65px;
   font-weight: bold;
   line-height: 40px;
@@ -781,7 +781,7 @@ img {
 }
 
 .mu-restaurant-menu li a {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   border-radius: 0;
   color: #fff;
@@ -978,35 +978,35 @@ RESERVATION SECTION
   margin-bottom: 20px;
 }
 
-.mu-reservation-form input[type="text"],
-.mu-reservation-form input[type="email"] {
+.mu-reservation-form input[type='text'],
+.mu-reservation-form input[type='email'] {
   border-radius: 0;
   color: #000;
   height: 40px;
 }
 
-.mu-reservation-form input[type="text"]:focus,
-.mu-reservation-form input[type="email"]:focus {
+.mu-reservation-form input[type='text']:focus,
+.mu-reservation-form input[type='email']:focus {
   box-shadow: none;
 }
 
-.mu-reservation-form input[type="text"]::-webkit-input-placeholder,
-.mu-reservation-form input[type="email"]::-webkit-input-placeholder {
+.mu-reservation-form input[type='text']::-webkit-input-placeholder,
+.mu-reservation-form input[type='email']::-webkit-input-placeholder {
   color: #555;
 }
 
-.mu-reservation-form input[type="text"]:-moz-placeholder,
-.mu-reservation-form input[type="email"]:-moz-placeholder {
+.mu-reservation-form input[type='text']:-moz-placeholder,
+.mu-reservation-form input[type='email']:-moz-placeholder {
   color: #555;
 }
 
-.mu-reservation-form input[type="text"]::-moz-placeholder,
-.mu-reservation-form input[type="email"]::-moz-placeholder {
+.mu-reservation-form input[type='text']::-moz-placeholder,
+.mu-reservation-form input[type='email']::-moz-placeholder {
   color: #555;
 }
 
-.mu-reservation-form input[type="text"]:-ms-input-placeholder,
-.mu-reservation-form input[type="email"]:-ms-input-placeholder {
+.mu-reservation-form input[type='text']:-ms-input-placeholder,
+.mu-reservation-form input[type='email']:-ms-input-placeholder {
   color: #555;
 }
 
@@ -1050,7 +1050,7 @@ RESERVATION SECTION
   color: #555;
 }
 
-.mu-reservation-form button[type="submit"] {
+.mu-reservation-form button[type='submit'] {
   border: none;
   margin-top: 20px;
   margin-left: 15px;
@@ -1098,7 +1098,7 @@ RESERVATION SECTION
 }
 
 .mu-opening-hour h2 {
-  font-family: "Tangerine", cursive;
+  font-family: 'Tangerine', cursive;
   font-size: 50px;
   margin: 10px 15px 20px;
   padding-bottom: 15px;
@@ -1211,7 +1211,7 @@ RESERVATION SECTION
 ====================*/
 
 #mu-client-testimonial {
-  background-image: url("assets/img/otakujatra.jpg");
+  background-image: url('assets/img/otakujatra.jpg');
   background-size: cover;
   background-attachment: fixed;
   display: inline;
@@ -1282,7 +1282,7 @@ RESERVATION SECTION
 }
 
 .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p:before {
-  content: "\f10e";
+  content: '\f10e';
   font-family: fontAwesome;
   font-size: 50px;
   left: 1%;
@@ -1310,7 +1310,7 @@ RESERVATION SECTION
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
   min-width: 175px;
@@ -1348,7 +1348,7 @@ RESERVATION SECTION
   float: left;
   width: 100%;
   padding: 100px 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #mu-artists .posts > li {
@@ -1464,7 +1464,7 @@ Read More button
 .readmore-wrapper > a {
   position: relative;
   float: left;
-  font-family: "Patrick Hand", sans-serif;
+  font-family: 'Patrick Hand', sans-serif;
   margin-right: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -1474,7 +1474,7 @@ Read More button
   border-radius: 5px;
   box-shadow: 0 2px 0 #000;
   transition: padding 0.1s, box-shadow 0.1s, top 0.1s;
-  background-image: url("data:image/gif;base64,R0lGODlhBAAEAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NUY1OENCRDdDMDYxMUUyOTEzMEE1MEM5QzM0NDVBMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NUY1OENCRTdDMDYxMUUyOTEzMEE1MEM5QzM0NDVBMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1RjU4Q0JCN0MwNjExRTI5MTMwQTUwQzlDMzQ0NUEzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1RjU4Q0JDN0MwNjExRTI5MTMwQTUwQzlDMzQ0NUEzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAAQAsAAAAAAQABAAAAgYEEpdoeQUAOw==");
+  background-image: url('data:image/gif;base64,R0lGODlhBAAEAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NUY1OENCRDdDMDYxMUUyOTEzMEE1MEM5QzM0NDVBMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NUY1OENCRTdDMDYxMUUyOTEzMEE1MEM5QzM0NDVBMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk1RjU4Q0JCN0MwNjExRTI5MTMwQTUwQzlDMzQ0NUEzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk1RjU4Q0JDN0MwNjExRTI5MTMwQTUwQzlDMzQ0NUEzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAAQAsAAAAAAQABAAAAgYEEpdoeQUAOw==');
 }
 
 /*==================
@@ -1505,7 +1505,7 @@ Read More button
 .mu-contact-left {
   display: inline;
   float: left;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
 }
 
@@ -1519,15 +1519,15 @@ Read More button
   letter-spacing: 0.5px;
 }
 
-.mu-contact-form input[type="text"],
-.mu-contact-form input[type="email"] {
+.mu-contact-form input[type='text'],
+.mu-contact-form input[type='email'] {
   color: #000;
   border-radius: 0;
   height: 40px;
 }
 
-.mu-contact-form input[type="text"]:focus,
-.mu-contact-form input[type="email"]:focus {
+.mu-contact-form input[type='text']:focus,
+.mu-contact-form input[type='email']:focus {
   box-shadow: none;
 }
 
@@ -1683,7 +1683,7 @@ Read More button
 }
 
 .mu-footer-copyright p {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   letter-spacing: 0.5px;
   color: #fff;
@@ -1792,6 +1792,11 @@ Read More button
     .mu-testimonial-info
     p::before {
     top: 40%;
+  }
+
+  .posts.small > li {
+    margin-bottom: 10px;
+    width: 100%;
   }
 }
 
@@ -1954,7 +1959,7 @@ Read More button
   #mu-subscription
     .mu-subscription-area
     .mu-subscription-form
-    input[type="text"] {
+    input[type='text'] {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -1999,6 +2004,11 @@ Read More button
     .mu-restaurant-menu
     li {
     margin-bottom: 10px;
+  }
+
+  .posts.small > li:not(:last-child) {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
@@ -2183,19 +2193,19 @@ Read More button
 }
 
 .hero-item {
-  background-image: url("./assets//img/gallery/image7.jpg");
+  background-image: url('./assets//img/gallery/image7.jpg');
 }
 
 .standard-item:nth-child(2) {
-  background-image: url("./assets//img/gallery/image5.jpg");
+  background-image: url('./assets//img/gallery/image5.jpg');
 }
 
 .standard-item:nth-child(3) {
-  background-image: url("./assets//img/gallery/image6.jpg");
+  background-image: url('./assets//img/gallery/image6.jpg');
 }
 
 .standard-item:nth-child(4) {
-  background-image: url("./assets//img/gallery/image4.jpg");
+  background-image: url('./assets//img/gallery/image4.jpg');
 }
 
 @supports (display: grid) {

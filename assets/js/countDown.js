@@ -1,4 +1,4 @@
-const countDownDate = new Date("Jan 5, 2020 15:37:25").getTime();
+const countDownDate = new Date('July 5, 2020 15:37:25').getTime();
 
 // Update the count down every 1 second
 const countDown = setInterval(function() {
@@ -16,6 +16,8 @@ const countDown = setInterval(function() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  console.log({ days, hours, minutes, seconds }, 'tims');
+
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
@@ -24,29 +26,29 @@ const countDown = setInterval(function() {
 
   // Output the result in an element with id="demo"
   if (days > 1) {
-    document.getElementById("countDown-day-label").innerHTML = "Days";
+    document.getElementById('countDown-day-label').innerHTML = 'Days';
   } else {
-    document.getElementById("countDown-day-label").innerHTML = "Day";
+    document.getElementById('countDown-day-label').innerHTML = 'Day';
   }
 
   if (hours > 1) {
-    document.getElementById("countDown-hour-label").innerHTML = "Hours";
+    document.getElementById('countDown-hour-label').innerHTML = 'Hours';
   } else {
-    document.getElementById("countDown-hour-label").innerHTML = "Hour";
+    document.getElementById('countDown-hour-label').innerHTML = 'Hour';
   }
   if (minutes > 1) {
-    document.getElementById("countDown-minute-label").innerHTML = "Minutes";
+    document.getElementById('countDown-minute-label').innerHTML = 'Minutes';
   } else {
-    document.getElementById("countDown-minute-label").innerHTML = "Minute";
+    document.getElementById('countDown-minute-label').innerHTML = 'Minute';
   }
   if (seconds > 1) {
-    document.getElementById("countDown-second-label").innerHTML = "Seconds";
+    document.getElementById('countDown-second-label').innerHTML = 'Seconds';
   } else {
-    document.getElementById("countDown-second-label").innerHTML = "Second";
+    document.getElementById('countDown-second-label').innerHTML = 'Second';
   }
 
-  document.getElementById("countDown-day").innerHTML = days;
-  document.getElementById("countDown-hour").innerHTML = hours;
-  document.getElementById("countDown-minute").innerHTML = minutes;
-  document.getElementById("countDown-second").innerHTML = seconds;
+  document.getElementById('countDown-day').innerHTML = days;
+  document.getElementById('countDown-hour').innerHTML = hours;
+  document.getElementById('countDown-minute').innerHTML = minutes;
+  document.getElementById('countDown-second').innerHTML = seconds;
 }, 1000);
