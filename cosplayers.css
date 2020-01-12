@@ -1,8 +1,14 @@
 body {
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  max-height: 100vh;
   background: #212121;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
 }
 
 h1 {
@@ -77,7 +83,7 @@ h1 {
   width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 70px;
+  grid-gap: 50px;
   margin: 0 auto;
 }
 .card {
@@ -159,4 +165,55 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   margin-top: 5px;
+}
+
+/* right and left arrow */
+
+.arrow-button {
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.arrow-button > a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #171515;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: 0.5s;
+}
+
+.arrow-button > a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #d35400;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.arrow-button > a:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d35400;
+  filter: blur(3px);
+}
+
+.arrow-button > a:hover {
+  color: #ffa502;
+  box-shadow: 0 0 15px #d35400;
+  text-shadow: 0 0 15px #d35400;
 }
