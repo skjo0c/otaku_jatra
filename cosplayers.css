@@ -7,17 +7,49 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 100px auto 100px;
   grid-gap: 10px;
 }
 
-h1 {
-  /* font-size: 13rem; */
+.header-start h3 {
+  font-size: 24px;
+  text-shadow: 2px 2px 5px #d35400;
+  display: inline-block;
+  margin: 0 auto;
+  /* line-height: 3.5; */
+  cursor: pointer;
+}
+
+.header-start a {
+  text-decoration: none;
+  color: initial;
+}
+
+.header-start i {
+  padding: 0 6px;
+}
+
+.header-mid {
+  margin: 0 auto;
+}
+
+.home > a {
+  display: inline-flex;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  /* margin-bottom: 45px; */
+  /* margin: 0 auto; */
+  align-items: center;
+}
+
+.header-mid h1 {
   font-weight: 200;
   font-style: italic;
   color: #fff;
-  /* padding: 4rem 6rem 5.5rem; */
-  /* border: 0.4rem solid #fff; */
   border-radius: 2rem;
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;
@@ -51,9 +83,16 @@ h1 {
   }
 }
 
-.glow {
+.header-mid .glow {
+  left: 0;
+  right: 0;
+  /* position: absolute; */
   text-align: center;
-  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   --interval: 1s;
   display: block;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
