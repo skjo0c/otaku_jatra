@@ -56,19 +56,19 @@ Author URI : http://www.markups.io/
 .datepicker .next:hover,
 .datepicker tfoot tr th:hover,
 .datepicker table tr td.day:hover,
-.mu-counter-nav li .mu-single-counter,
+.mu-counter-nav .mu-single-counter,
 .mu-top-slider .slick-dots li.slick-active button::before {
   background-color: #ffa500;
 }
 
 .mu-readmore-btn:hover::after,
 .mu-readmore-btn:focus::after,
-.mu-reservation-form input[type="text"]:focus,
-.mu-reservation-form input[type="email"]:focus,
+.mu-reservation-form input[type='text']:focus,
+.mu-reservation-form input[type='email']:focus,
 .mu-reservation-form select:focus,
 .mu-reservation-form textarea:focus,
-.mu-contact-form input[type="text"]:focus,
-.mu-contact-form input[type="email"]:focus,
+.mu-contact-form input[type='text']:focus,
+.mu-contact-form input[type='email']:focus,
 .mu-contact-form textarea:focus {
   border-color: #ffa500;
 }

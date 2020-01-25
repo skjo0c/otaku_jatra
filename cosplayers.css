@@ -5,11 +5,15 @@ body {
   background: #212121;
 }
 
-.container {
+nav {
+  margin-bottom: 20px;
+}
+
+/* .container {
   display: grid;
   grid-template-columns: 100px auto 100px;
   grid-gap: 10px;
-}
+} */
 
 .header-start h3 {
   font-size: 24px;
@@ -53,6 +57,10 @@ body {
   border-radius: 2rem;
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;
+}
+
+.item-lists {
+  position: relative;
 }
 
 /* Animate neon flicker */
@@ -118,19 +126,13 @@ body {
   }
 }
 
-.box {
-  width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 50px;
-  margin: 0 auto;
-}
 .card {
   position: relative;
   width: 300px;
   height: 350px;
   background: #fff;
   margin: 0 auto;
+  margin-bottom: 50px;
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
@@ -208,13 +210,30 @@ body {
 
 /* right and left arrow */
 
-.arrow-button {
+.arrow-container {
+  z-index: -1;
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  text-align: center;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  display: flex;
+}
+
+.left-arrow-button {
+  margin-left: 25px;
+  left: 0;
+  position: absolute;
+}
+
+.right-arrow-button {
+  margin-right: 25px;
+  right: 0;
+  position: absolute;
 }
 
 .arrow-button > a {

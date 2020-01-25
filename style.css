@@ -197,7 +197,6 @@ img {
 
 #mu-header {
   background-color: #fff;
-  /* border-bottom: 1px solid #ddd; */
   position: fixed;
   left: 0;
   top: 0;
@@ -247,15 +246,11 @@ img {
   padding: 10px 20px;
 }
 
-.mu-main-navbar .navbar-header .navbar-brand {
+.navbar-brand {
   color: #333;
   display: inline-block;
   font-weight: 700;
-  font-size: 35px;
-  padding: 12px;
-  margin-top: 6px;
-  height: 34px;
-  width: 200px;
+  font-size: 2rem;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -263,17 +258,17 @@ img {
   transition: all 0.5s;
 }
 
-.mu-main-navbar .navbar-header .navbar-brand img {
+.navbar-brand img {
   margin-top: -10px;
 }
 
-.mu-main-navbar .navbar-header .navbar-brand-small {
+.navbar-brand-small {
   height: 20px;
   margin-top: 16px;
   width: 105px;
 }
 
-.mu-main-navbar .navbar-header .navbar-brand-small span {
+.navbar-brand-small span {
   margin-top: -4px;
 }
 
@@ -291,16 +286,16 @@ img {
 
 /* .bubble containers: add the texture above a solid background */
 .bubble {
-  padding: 0.2rem 1.25rem;
+  padding: 0.3rem 1.25rem;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.125rem;
   background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
     #fff;
   background-size: 12px, 100%;
   /* solid border */
-  border: 0.4rem solid #000;
+  border: 0.2rem solid #000;
   /* position relative for the :before pseudo element */
   position: relative;
 }
@@ -316,7 +311,7 @@ img {
 .bubble:before {
   content: '';
   position: absolute;
-  left: -1rem;
+  left: -0.6rem;
   top: 0.15rem;
   width: 100%;
   height: 100%;
@@ -324,8 +319,26 @@ img {
   background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(35)" opacity="1" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
     #000;
   background-size: 12px, 100%;
-  border: 0.4rem solid #000;
+  border: 0.2rem solid #000;
   z-index: -5;
+}
+
+ul.list-group:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+.list-group-item {
+  float: left;
+  border: 0 !important;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.list-group a {
+  display: block;
+  padding: 5px;
 }
 
 /*scrol to top*/
@@ -534,31 +547,6 @@ img {
   width: 100%;
 }
 
-/* .mu-about-us-right {
-  display: inline;
-  float: left;
-  margin-top: 20px;
-  padding-top: 30px;
-  padding-left: 15px;
-  width: 100%;
-}
-
-.mu-about-us-right ul {
-  margin-bottom: 20px;
-  padding-left: 25px;
-}
-
-.mu-about-us-right ul li {
-  line-height: 24px;
-  margin-bottom: 10px;
-}
-
-.mu-about-us-right ul li:before {
-  content: "\f0da";
-  font-family: fontAwesome;
-  margin-right: 10px;
-} */
-
 .mu-about-us-left {
   display: inline;
   float: left;
@@ -591,7 +579,7 @@ img {
 .mu-about-us-detail {
   margin: 50px;
   text-align: center;
-  font-size: 1.875rem;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
@@ -631,7 +619,7 @@ img {
 
 .top-left {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   left: -6px;
   position: absolute;
@@ -703,7 +691,7 @@ img {
   border-right: none;
 }
 
-.mu-counter-nav li .mu-single-counter {
+.mu-counter-nav .mu-single-counter {
   color: #fff;
   display: inline;
   float: left;
@@ -712,12 +700,12 @@ img {
   width: 100%;
 }
 
-.mu-counter-nav li .mu-single-counter span {
+.mu-counter-nav .mu-single-counter span {
   font-family: 'Tangerine', cursive;
   font-size: 40px;
 }
 
-.mu-counter-nav li .mu-single-counter h3 {
+.mu-counter-nav .mu-single-counter h3 {
   font-size: 50px;
   font-weight: bold;
   line-height: 40px;
@@ -725,20 +713,20 @@ img {
   margin-top: 10px;
 }
 
-.mu-counter-nav li .mu-single-counter h3 span {
+.mu-counter-nav .mu-single-counter h3 span {
   font-family: 'Tangerine', cursive;
   font-size: 65px;
   font-weight: bold;
   line-height: 40px;
 }
 
-.mu-counter-nav li .mu-single-counter h3 sup {
+.mu-counter-nav .mu-single-counter h3 sup {
   font-weight: normal;
   display: inline-block;
   font-size: 35px;
 }
 
-.mu-counter-nav li .mu-single-counter p {
+.mu-counter-nav .mu-single-counter p {
   font-size: 18px;
   letter-spacing: 1.5px;
   margin-bottom: 0;
@@ -1351,11 +1339,11 @@ RESERVATION SECTION
   font-family: 'Open Sans', sans-serif;
 }
 
-#mu-artists .posts > li {
+#mu-artists .posts .card {
   margin-right: 15px;
 }
 
-#mu-artists .posts > li:last-child {
+#mu-artists .posts .card:last-child {
   margin-right: 0;
 }
 
@@ -1363,7 +1351,7 @@ RESERVATION SECTION
   margin: 0 auto;
 }
 
-.posts > li {
+.posts .card {
   float: left;
   width: 100%;
   background-color: #fff;
@@ -1394,11 +1382,11 @@ RESERVATION SECTION
   font-size: 1.875em; /* 30px / 16px */
 }
 
-.posts > li > article {
+.posts .card > article {
   padding-top: 30px;
 }
 
-.posts > li p {
+.posts .card p {
   clear: left;
   margin-bottom: 30px;
   font-size: 0.875em; /* 14px / 16px */
@@ -1414,8 +1402,7 @@ RESERVATION SECTION
 /*--------------------
   12.1.1 SMALL POSTS
 --------------------*/
-.posts.small > li {
-  width: 370px;
+.posts.small .card {
   border: 5px solid black;
 }
 
@@ -1425,18 +1412,12 @@ RESERVATION SECTION
   border-top-right-radius: 4px;
 }
 
-.posts.small > li > article {
+.posts.small .card > article {
   padding: 30px 15px;
 }
 
 .posts.small h5 {
   font-size: 2.125em; /* 26px */
-}
-
-.posts.small > li p {
-  margin-bottom: 35px;
-  font-size: 0.8125em; /* 13px / 16px */
-  line-height: 22px;
 }
 
 /* ------------------
@@ -1740,6 +1721,10 @@ Read More button
 }
 
 @media (max-width: 991px) {
+  body {
+    line-height: normal;
+  }
+
   .mu-main-navbar .mu-main-nav li a {
     padding-left: 5px;
     padding-right: 5px;
@@ -1794,7 +1779,7 @@ Read More button
     top: 40%;
   }
 
-  .posts.small > li {
+  .posts.small .card {
     margin-bottom: 10px;
     width: 100%;
   }

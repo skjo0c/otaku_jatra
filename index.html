@@ -52,29 +52,28 @@
 
   <!-- Start header section -->
   <header id="mu-header">
-    <nav class="navbar navbar-default mu-main-navbar" id="mu-main-navbar" role="navigation">
+    <nav class="navbar navbar-inverse bg-inverse navbar-expand-sm mu-main-navbar" id="mu-main-navbar" role="navigation">
       <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar"
-            data-toggle="collapse" type="button">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <a class="navbar-brand" href="index.html">OtakuJatra</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <span class="navbar-toggler-icon" style="line-height: normal;"><i class="fa fa-align-justify"
+              style="color:#ffa500;"></i></span>
+        </button>
 
-          <!-- LOGO -->
+        <!-- <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar"
+          data-toggle="collapse" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> -->
 
-          <!--  Text based logo  -->
-          <a class="navbar-brand" href="index.html">OtakuJatra</a>
 
-          <!--  Image based logo  -->
-          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>  -->
-        </div>
-        <div class="navbar-collapse collapse" id="navbar">
-          <ul class="nav navbar-nav navbar-right mu-main-nav" id="top-menu">
-            <li>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="nav navbar-nav navbar-right mu-main-nav list-group" id="top-menu">
+            <li class="nav-item">
               <a href="index.html">
                 <!-- bubble highlighting something  -->
                 <div class="bubble bubble--highlight">
@@ -82,7 +81,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a href="#mu-about-us">
                 <!-- bubble highlighting something  -->
                 <div class="bubble bubble--highlight">
@@ -90,7 +89,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a href="#mu-gallery">
                 <!-- bubble highlighting something  -->
                 <div class="bubble bubble--highlight">
@@ -98,7 +97,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a href="./blogs.html">
                 <!-- bubble highlighting something  -->
                 <div class="bubble bubble--highlight">
@@ -106,7 +105,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a href="#mu-artists">
                 <!-- bubble highlighting something  -->
                 <div class="bubble bubble--highlight">
@@ -114,7 +113,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a href="#mu-contact">
                 <!-- bubble highlighting something  -->
                 <div class="bubble bubble--highlight">
@@ -124,7 +123,6 @@
             </li>
           </ul>
         </div>
-        <!--/.nav-collapse -->
       </div>
     </nav>
   </header>
@@ -238,46 +236,49 @@
   <section id="mu-counter">
     <div class="mu-counter-overlay">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mu-counter-area">
-              <ul class="mu-counter-nav">
-                <li class="col-md-3 col-sm-3 col-xs-12">
-                  <div class="mu-single-counter">
+        <div class="mu-counter-area">
+          <div class="mu-counter-nav">
+            <div class="row">
+              <div class="col-md-3 col-sm-12">
+                <div class="card">
+                  <div class=" mu-single-counter">
                     <h3>
                       <span id="countDown-day"></span>
                     </h3>
                     <span id="countDown-day-label"></span>
                   </div>
-                </li>
-
-                <li class="col-md-3 col-sm-3 col-xs-12">
-                  <div class="mu-single-counter">
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="card">
+                  <div class=" mu-single-counter">
                     <h3>
                       <span id="countDown-hour"></span>
                     </h3>
                     <span id="countDown-hour-label"></span>
                   </div>
-                </li>
-
-                <li class="col-md-3 col-sm-3 col-xs-12">
-                  <div class="mu-single-counter">
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="card">
+                  <div class=" mu-single-counter">
                     <h3>
                       <span id="countDown-minute"></span>
                     </h3>
                     <span id="countDown-minute-label"></span>
                   </div>
-                </li>
-
-                <li class="col-md-3 col-sm-3 col-xs-12">
-                  <div class="mu-single-counter">
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="card">
+                  <div class=" mu-single-counter">
                     <h3>
                       <span id="countDown-second"></span>
                     </h3>
                     <span id="countDown-second-label"></span>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -384,11 +385,10 @@
   <!-- Start artists Section -->
   <section id="mu-artists">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="posts small">
-            <!--POST-->
-            <li>
+      <div class="posts small">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="card">
               <figure class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready"
                 style='background-image: url("./assets/img/chef/cosplayers.jpg"); background-size: cover; background-position: center top; background-repeat: no-repeat;'>
               </figure>
@@ -405,11 +405,10 @@
                   <a href="./cosplayers.html" class="readmore_btn"><span>Read More</span></a>
                 </div>
               </article>
-            </li>
-            <!--/POST-->
-
-            <!--POST-->
-            <li>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="card">
               <figure class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready"
                 style='background-image: url("./assets/img/chef/dance_crew.jpg"); background-size: cover; background-position: center top; background-repeat: no-repeat;'>
               </figure>
@@ -426,11 +425,10 @@
                   <a href="#" class="readmore_btn"><span>Read More</span></a>
                 </div>
               </article>
-            </li>
-            <!--/POST-->
-
-            <!--POST-->
-            <li>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="card">
               <figure class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready"
                 style='background-image: url("./assets/img/chef/manga_artist.jpg"); background-size: cover; background-position: center top; background-repeat: no-repeat;'>
               </figure>
@@ -447,11 +445,11 @@
                   <a href="#" class="readmore_btn"><span>Read More</span></a>
                 </div>
               </article>
-            </li>
-            <!--/POST-->
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!-- End artists Section -->
