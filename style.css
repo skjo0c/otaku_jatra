@@ -676,6 +676,44 @@ ul.list-group:after {
   background-image: radial-gradient(circle, yellow, orange);
 }
 
+/* see more highlights button */
+
+.about-us.button.type3 {
+  color: #000;
+  width: 200px;
+  margin: 0 auto;
+  top: 50%;
+  text-align: center;
+}
+
+.about-us.button.type3.type3::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #ff1a1a;
+  border-right-color: #ff1a1a;
+}
+
+.about-us.button.type3.type3::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #ff1a1a;
+  border-left-color: #ff1a1a;
+}
+
+.about-us.button.type3.type3:hover:after,
+.about-us.button.type3.type3:hover:before {
+  border-bottom-color: white;
+  border-right-color: white;
+  border-top-color: white;
+  border-left-color: white;
+  width: 100%;
+  height: 100%;
+}
+
 /*==================
  COUNTER SECTION
 ====================*/
@@ -1286,10 +1324,10 @@ RESERVATION SECTION
 
 .button.type3.type3:hover:after,
 .button.type3.type3:hover:before {
-  border-bottom-color: #white;
-  border-right-color: #white;
-  border-top-color: #white;
-  border-left-color: #white;
+  border-bottom-color: white;
+  border-right-color: white;
+  border-top-color: white;
+  border-left-color: white;
   width: 100%;
   height: 100%;
 }
@@ -2355,7 +2393,7 @@ Read More button
   margin: 50px 0;
 }
 
-.slick-slide {
+.partners-logos .slick-slide {
   margin: 0px 20px;
 }
 

@@ -1,0 +1,43 @@
+#mu-about-us {
+  padding: 0px;
+}
+
+#mu-about-us:first-of-type {
+  padding-top: 100px;
+}
+
+.live {
+  overflow: hidden;
+}
+.live > li {
+  list-style: none;
+  position: relative;
+  text-align: initial;
+  padding: 0 0 0 2em;
+  margin: 0 0 0.5em 10px;
+  transition: 0.12s;
+}
+.live > li::before {
+  position: absolute;
+  content: '\2022';
+  font-family: Arial;
+  color: #333333;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0.5;
+  line-height: 0.75;
+  transition: 0.5s;
+}
+.live > li:hover {
+  color: #ff1a1a;
+  font-size: 1.25rem;
+  cursor: default;
+}
+.live > li:hover::before {
+  transform: scale(1.5);
+  opacity: 1;
+  text-shadow: 0 0 4px;
+  transition: 0.1s;
+}
