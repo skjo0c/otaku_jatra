@@ -256,3 +256,16 @@ $('#read_more_slider').click(function() {
   $('#slider').toggleClass('slidedown slideup');
   document.getElementById('read_more_slider').remove();
 });
+
+// Inline popups
+$('#inline-popups').magnificPopup({
+  delegate: 'div',
+  removalDelay: 500, //delay removal by X to allow out-animation
+  callbacks: {
+    beforeOpen: function() {
+      console.log('here');
+      this.st.mainClass = this.st.el.attr('data-effect');
+    },
+  },
+  midClick: true, // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});

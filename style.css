@@ -680,6 +680,10 @@ ul.list-group:after {
 
 /* see more highlights button */
 
+.mu-top-slider-single .button.type3 {
+  color: white;
+}
+
 .about-us.button.type3 {
   color: #000;
   width: 200px;
@@ -2111,7 +2115,11 @@ Read More button
   }
 
   .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
-    display: none;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    padding: 100px 5px;
   }
 
   .mu-reservation-content p {
@@ -2541,4 +2549,122 @@ Read More button
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* ==========================Pop Up=============================== */
+
+/* @import 'compass/css3'; */
+/* text-based popup styling */
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 25px;
+  width: auto;
+  margin: 0 auto;
+}
+/* ====== Zoom effect ====== */
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+/* preview styles */
+html {
+  font-family: 'Calibri', 'Trebuchet MS', 'Helvetica', sans-serif;
+}
+h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+a,
+a:visited {
+  color: #1760bf;
+  text-decoration: none;
+}
+a:hover {
+  color: #c00;
+}
+.links li {
+  margin-bottom: 5px;
+}
+h4 {
+  margin: 24px 0 0 0;
+}
+.bottom-text {
+  margin-top: 40px;
+  border-top: 2px solid #ccc;
+}
+.bottom-text a {
+  border-bottom: 1px solid #ccc;
+}
+.bottom-text p {
+  max-width: 650px;
+}
+
+/* ========================SCHEDULE DETAIL TABLE================================ */
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row {
+  text-align: start;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.package-detail {
+  text-align: start;
 }
