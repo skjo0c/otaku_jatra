@@ -2606,26 +2606,9 @@ Read More button
   opacity: 0;
 }
 /* preview styles */
-html {
-  font-family: 'Calibri', 'Trebuchet MS', 'Helvetica', sans-serif;
-}
-h3 {
-  margin-top: 0;
-  font-size: 24px;
-}
-a,
-a:visited {
-  color: #1760bf;
-  text-decoration: none;
-}
-a:hover {
-  color: #c00;
-}
+
 .links li {
   margin-bottom: 5px;
-}
-h4 {
-  margin: 24px 0 0 0;
 }
 .bottom-text {
   margin-top: 40px;
@@ -2667,4 +2650,10 @@ h4 {
 
 .package-detail {
   text-align: start;
+}
+
+.mu-about-us-detail h3,
+.mu-about-us-detail h4,
+.mu-about-us-detail h5 {
+  color: #468847;
 }
